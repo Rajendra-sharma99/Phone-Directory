@@ -94,15 +94,12 @@ protected:
         name.push_back(first_name);
         name.push_back(last_name);
         cout << "Phone : ";
-        // int n; cin>>n;
-        // while(n--) {
         string phone; cin >> phone;
         while (phone.size() != 10) {
             cout << "\nEnter Correct Phone : ";
             cin >> phone;
         }
         mobile.push_back(phone);
-        // }
         cout << "Email : ";
         string e_mail; cin >> e_mail;
         email.push_back(e_mail);
@@ -186,6 +183,7 @@ protected:
         contactNode *temp = head;
         if (!head) {
             cout << "\n\nNo Contact Found!!!\n";
+
             return;
         }
         cout << '\n';
