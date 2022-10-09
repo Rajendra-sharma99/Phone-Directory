@@ -23,6 +23,7 @@ private:
     contactNode *head = NULL, *tail = NULL;
 
     void Sort(contactNode *newContact) {
+        // TC : O(n);
         if (head != NULL) {
             contactNode *temp = head;
             string NewNode_name = newContact->name[0];
@@ -178,7 +179,7 @@ protected:
 
 
     // TC : O(n)
-    // SC : O()
+    // SC : O(1)
     void view() {
         contactNode *temp = head;
         if (!head) {
